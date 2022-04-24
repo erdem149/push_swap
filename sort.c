@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   sort.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acetin <acetin@42.fr>                      +#+  +:+       +#+        */
+/*   By: eryilmaz <eryilmaz@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/31 14:08:07 by acetin            #+#    #+#             */
-/*   Updated: 2022/03/31 14:14:32 by acetin           ###   ########.fr       */
+/*   Created: 2022/04/22 13:06:23 by eryilmaz          #+#    #+#             */
+/*   Updated: 2022/04/22 13:06:35 by eryilmaz         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	give_back(t_stack **stack_a, t_stack **stack_b)
@@ -38,7 +39,7 @@ void	push_stack_b(t_stack **stack_a, t_stack **stack_b)
 	int	index;
 
 	ort = pivot(*stack_a);
-	while (min(*stack_a) != ort)
+	while (min(*stack_a) < ort)
 	{
 		size = ft_lstsize(*stack_a);
 		index = find_index(*stack_a, ort);

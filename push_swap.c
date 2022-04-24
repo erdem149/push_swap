@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acetin <acetin@42.fr>                      +#+  +:+       +#+        */
+/*   By: eryilmaz <eryilmaz@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/31 13:57:00 by acetin            #+#    #+#             */
-/*   Updated: 2022/03/31 13:57:02 by acetin           ###   ########.fr       */
+/*   Created: 2022/04/22 13:04:47 by eryilmaz          #+#    #+#             */
+/*   Updated: 2022/04/22 13:04:51 by eryilmaz         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int	main(int argc, char **argv)
 	else if (argc > 1)
 	{
 		stack = push_swap(argv, argc);
-		free(stack);
+		ft_lstclear(stack);
 		exit(EXIT_SUCCESS);
 	}
 	return (0);

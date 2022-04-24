@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acetin <acetin@42.fr>                      +#+  +:+       +#+        */
+/*   By: eryilmaz <eryilmaz@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/31 14:16:11 by acetin            #+#    #+#             */
-/*   Updated: 2022/03/31 14:49:12 by acetin           ###   ########.fr       */
+/*   Created: 2022/04/22 13:06:43 by eryilmaz          #+#    #+#             */
+/*   Updated: 2022/04/24 12:43:06 by eryilmaz         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,4 +89,16 @@ int	find_index(t_stack *stack, int data)
 	if (first > (size - last))
 		return (last);
 	return (first);
+}
+
+void	ft_lstclear(t_stack *stack)
+{
+	t_stack	adres;
+
+	while (stack)
+	{
+		adres.next = stack->next;
+		free(stack);
+		stack = adres.next;
+	}
 }

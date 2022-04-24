@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: acetin <acetin@42.fr>                      +#+  +:+       +#+        */
+/*   By: eryilmaz <eryilmaz@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/31 14:17:02 by acetin            #+#    #+#             */
-/*   Updated: 2022/03/31 14:51:12 by acetin           ###   ########.fr       */
+/*   Created: 2022/04/22 13:05:05 by eryilmaz          #+#    #+#             */
+/*   Updated: 2022/04/22 13:05:08 by eryilmaz         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,9 @@ int			big(t_stack *stack);
 int			where(t_stack *stack, int data);
 int			pivot(t_stack *stack);
 int			find_index(t_stack *stack, int data);
+void		ft_lstclear(t_stack *stack);
 
-//SORT
+// SORT
 int			is_sorted(t_stack *stack);
 int			is_revsorted(t_stack *stack);
 void		sort(a_stack **stack_a);
