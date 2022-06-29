@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-t_stack	*to_int(char **str, int ac)
+t_stack	* to_int(char **str, int ac)
 {
 	t_stack	*ret;
 	int		size;
